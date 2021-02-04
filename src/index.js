@@ -6,6 +6,7 @@ import './index.css';
 import * as exports from '@wordpress/icons';
 
 const iconListComponent = Object.entries( exports );
+
 let iconList = [];
 
 for ( let i in iconListComponent ) {
