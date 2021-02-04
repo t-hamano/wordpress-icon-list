@@ -20,7 +20,6 @@ const newIcons = [
 
 export default function IconInfo( props ) {
 	const [ openTip, setOpenTip ] = useState( false );
-	const [ title, setTitle ] = useState( 'Copy' );
 
 	const { icon } = props;
 
@@ -31,22 +30,15 @@ export default function IconInfo( props ) {
 				open={ openTip }
 				disableHoverListener
 				placement='top'
-				title={ title }
+				title={ 'Copied!!' }
 			>
 				<CopyToClipboard
 					text={ icon[0] }
 					onCopy={() => {
-						setTitle( 'Copied !!' );
 						setOpenTip( true );
 					}}
 					>
 					<li
-						onMouseEnter={() => {
-							if ( ! isMobile ) {
-								setTitle( 'Copy' );
-								setOpenTip( true );
-							}
-						}}
 						onMouseLeave={() => {
 							setOpenTip( false );
 						}}
