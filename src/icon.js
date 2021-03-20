@@ -6,16 +6,14 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { Icon } from '@wordpress/icons';
 
 const newIcons = [
-	'justifyLeft',
-	'justifyCenter',
-	'justifyRight',
-	'justifySpaceBetween',
-	'lock',
-	'queryPagination',
-	'queryPaginationNext',
-	'queryPaginationNumbers',
-	'queryPaginationPrevious',
-	'ungroup'
+	'buttons',
+	'customPostType',
+	'overlayText',
+	'customLink',
+	'pages',
+	'postCategories',
+	'previous',
+	'next'
 ];
 
 export default function IconInfo( props ) {
