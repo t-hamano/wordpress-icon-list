@@ -6,14 +6,10 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { Icon } from '@wordpress/icons';
 
 const newIcons = [
-	'buttons',
-	'customPostType',
-	'overlayText',
-	'customLink',
-	'pages',
-	'postCategories',
-	'previous',
-	'next'
+	'archiveTitle',
+	'login',
+	'postContent',
+	'termDescription'
 ];
 
 export default function IconInfo( props ) {
