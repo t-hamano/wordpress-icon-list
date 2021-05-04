@@ -6,8 +6,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { Icon } from '@wordpress/icons';
 
 const newIcons = [
-	'addSubmenu',
-	'siteLogo'
+	'moveTo'
 ];
 
 export default function IconInfo( props ) {
