@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { isMobile } from 'react-device-detect';
 import Tooltip from '@material-ui/core/Tooltip';
 import { Icon } from '@wordpress/icons';
 

@@ -22,7 +22,6 @@
 		"eslint-config-wordpress": "^2.0.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"react-copy-to-clipboard": "^5.0.3",
-		"react-device-detect": "^1.17.0",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-recommended-scss": "^4.2.0",
 		"stylelint-config-wordpress": "^17.0.0",
