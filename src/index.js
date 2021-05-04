@@ -5,6 +5,8 @@ import './index.css';
 
 import * as exports from '@wordpress/icons';
 
+const p = require( '../package.json' );
+
 const iconListComponent = Object.entries( exports );
 
 let iconList = [];
@@ -18,6 +20,7 @@ for ( let i in iconListComponent ) {
 
 ReactDOM.render(
 	<React.StrictMode>
+		<small>( Version: { p.version } )</small>
 		<ul className={ 'iconlist' }>
 			{
 				iconList.map( ( icon, index ) => {
