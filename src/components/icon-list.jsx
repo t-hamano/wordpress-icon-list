@@ -12,8 +12,11 @@ export default function IconList( props ) {
 		const filteredIconList = defaultIconList.filter( ( icon ) => {
 			return icon[0].toLowerCase().match( regEx );
 		});
+
 		setIconList( filteredIconList );
   }, [ searchWord ]);
+
+	console.log( iconList );
 
 	return (
 		<>
@@ -21,13 +24,20 @@ export default function IconList( props ) {
 				searchWord={ searchWord }
 				setSearchWord={ setSearchWord }
 			/>
-			<ul className={ 'iconlist' }>
-				{
-					iconList.map( ( icon, index ) => {
-						return <Icon key={ index } icon={ icon } />;
-					})
-				}
-			</ul>
+			<div className="iconlist">
+				{iconList.length ? (
+					<ul>
+						{
+							iconList.map( ( icon, index ) => {
+								return <Icon key={ index } icon={ icon } />;
+							})
+						}
+					</ul>
+				) : (
+					<p>No icons found.</p>
+				)
+			}
+			</div>
 		</>
 	);
 }

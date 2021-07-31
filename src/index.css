@@ -106,7 +106,7 @@ body {
 }
 
 /* Component(IconList) */
-.iconlist {
+.iconlist ul {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -136,6 +136,12 @@ body {
 	background: #fbe4e0;
 }
 
+.iconlist p {
+	padding: 5em 0;
+	font-size: 20px;
+	text-align: center;
+}
+
 @media screen and (max-width: 768px) {
 
 	h1 {
@@ -146,7 +152,7 @@ body {
 		font-size: 18px;
 	}
 
-	.iconlist {
+	.iconlist ul {
 		font-size: 10px;
 	}
 

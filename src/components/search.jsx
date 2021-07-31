@@ -8,7 +8,7 @@ export default function IconInfo( props ) {
 	const { searchWord, setSearchWord } = props;
 
 	return (
-		<div className={ 'search' }>
+		<div className="search">
 			<TextField
 				onChange={( event ) => setSearchWord( event.target.value )}
 				placeholder="Search Icon"
