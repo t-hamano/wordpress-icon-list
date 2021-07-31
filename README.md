@@ -3,7 +3,7 @@
 This is an application to list the icons available in the [@wordpress/icons](https://www.npmjs.com/package/@wordpress/icons) npm package.
 
 ## Demo
-https://wp-icon.wild-works.net/
+[https://wp-icon.wild-works.net/](https://wp-icon.wild-works.net/){:target="_blank"}
 
 ## Usage in Gutenberg development
 
