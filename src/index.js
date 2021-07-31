@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import IconInfo from './icon';
 import './index.css';
-
+import IconList from './components/icon-list.jsx';
 import * as exports from '@wordpress/icons';
 
 const p = require( '../package.json' );
@@ -22,15 +21,9 @@ for ( let i in iconListComponent ) {
 ReactDOM.render(
 	<React.StrictMode>
 		{ undefined !== version && (
-			<small>( Version: { version } )</small>
+			<small>( Latest Version: { version } )</small>
 		)}
-		<ul className={ 'iconlist' }>
-			{
-				iconList.map( ( icon, index ) => {
-					return <IconInfo key={ index } icon={ icon } />;
-				})
-			}
-		</ul>
+		<IconList defaultIconList={ iconList } />
 	</React.StrictMode>,
 	document.getElementById( 'root' )
 );

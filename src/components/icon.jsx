@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-
+import { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Tooltip from '@material-ui/core/Tooltip';
 import { Icon } from '@wordpress/icons';
 
 export default function IconInfo( props ) {
 	const [ openTip, setOpenTip ] = useState( false );
-
 	const { icon } = props;
 
 	return (

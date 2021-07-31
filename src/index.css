@@ -1,3 +1,4 @@
+/* Common */
 * {
 	box-sizing: border-box;
 	text-size-adjust: 100%;
@@ -9,7 +10,7 @@
 }
 
 h1 {
-	margin: 0 0 3em;
+	margin: 0 0 2em;
 	padding: 18px 0;
 	color: #fff;
 	font-size: 40px;
@@ -30,6 +31,10 @@ a {
 	color: #21759b;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 code {
 	padding: 0.4em 0.65em;
 	font-size: 0.8em;
@@ -44,6 +49,13 @@ code.block {
 	padding: 1em;
 }
 
+hr {
+	height: 1px;
+	margin: 60px 0;
+	background-color: #999;
+	border: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -54,6 +66,18 @@ body {
 	word-break: break-word;
 }
 
+@media screen and (max-width: 768px) {
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+}
+
+/* Layout */
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -64,10 +88,27 @@ body {
 	text-align: right;
 }
 
+/* Component(Search) */
+.search {
+	max-width: 400px;
+	margin: 80px auto;
+}
+
+.search	input {
+	padding: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	.search {
+		margin: 30px auto;
+	}
+}
+
+/* Component(IconList) */
 .iconlist {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 100px 0 0;
 	padding: 0;
 	color: #999;
 	font-size: 12px;
@@ -95,10 +136,6 @@ body {
 	background: #fbe4e0;
 }
 
-.MuiTooltip-popper .MuiTooltip-tooltip {
-	font-size: 12px;
-}
-
 @media screen and (max-width: 768px) {
 
 	h1 {
@@ -116,4 +153,9 @@ body {
 	.iconlist li {
 		width: 33.3%;
 	}
+}
+
+/* Component(Tooltip) */
+.MuiTooltip-popper .MuiTooltip-tooltip {
+	font-size: 12px;
 }
