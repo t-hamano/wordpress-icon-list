@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@material-ui/core": "^4.12.3",
 		"@material-ui/icons": "^4.11.2",
-		"@wordpress/icons": "^5.0.0",
+		"@wordpress/icons": "^5.0.1",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-config-wordpress": "^2.0.0",
