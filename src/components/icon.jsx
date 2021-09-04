@@ -27,7 +27,7 @@ export default function IconInfo( props ) {
 							setOpenTip( false );
 						} }
 					>
-						<Icon icon={ icon[ 1 ] } />
+						<Icon icon={ icon[ 1 ] } viewBox="0 0 24 24" />
 						<span>{ icon[ 0 ] }</span>
 					</li>
 				</CopyToClipboard>
