@@ -1,4 +1,3 @@
 module.exports = {
-	'extends': 'wordpress',
-	'parser': 'babel-eslint'
+	extends: [ 'plugin:@wordpress/eslint-plugin/recommended' ],
 };

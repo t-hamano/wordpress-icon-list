@@ -5,24 +5,24 @@ import IconList from './components/icon-list.jsx';
 import * as exports from '@wordpress/icons';
 
 const p = require( '../package.json' );
-const version = p?.devDependencies?.['@wordpress/icons'].replace( '^', '' );
+const version = p?.devDependencies?.[ '@wordpress/icons' ].replace( '^', '' );
 
 const iconListComponent = Object.entries( exports );
 
-let iconList = [];
+const iconList = [];
 
-for ( let i in iconListComponent ) {
-	if ( 'Icon' === iconListComponent[i][0]) {
+for ( const i in iconListComponent ) {
+	if ( 'Icon' === iconListComponent[ i ][ 0 ] ) {
 		continue;
 	}
-	iconList.push( iconListComponent[i]);
+	iconList.push( iconListComponent[ i ] );
 }
 
 ReactDOM.render(
 	<React.StrictMode>
 		{ undefined !== version && (
 			<small>( Latest Version: { version } )</small>
-		)}
+		) }
 		<IconList defaultIconList={ iconList } />
 	</React.StrictMode>,
 	document.getElementById( 'root' )

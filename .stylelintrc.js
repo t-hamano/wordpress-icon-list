@@ -1,7 +1,7 @@
 module.exports = {
 	extends: [
-		'stylelint-config-rational-order',
-		'stylelint-config-wordpress/scss',
+		"@wordpress/stylelint-config/scss",
+		"stylelint-config-rational-order"
 	],
   ignoreFiles: [
 		'node_modules/**/*.css',

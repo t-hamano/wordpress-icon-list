@@ -7,36 +7,28 @@ export default function IconList( props ) {
 	const [ searchWord, setSearchWord ] = useState( '' );
 	const [ iconList, setIconList ] = useState( defaultIconList );
 
-  useEffect( () => {
+	useEffect( () => {
 		const regEx = new RegExp( searchWord.toLowerCase().trim() );
 		const filteredIconList = defaultIconList.filter( ( icon ) => {
-			return icon[0].toLowerCase().match( regEx );
-		});
+			return icon[ 0 ].toLowerCase().match( regEx );
+		} );
 
 		setIconList( filteredIconList );
-  }, [ searchWord ]);
-
-	console.log( iconList );
+	}, [ searchWord ] );
 
 	return (
 		<>
-			<Search
-				searchWord={ searchWord }
-				setSearchWord={ setSearchWord }
-			/>
+			<Search searchWord={ searchWord } setSearchWord={ setSearchWord } />
 			<div className="iconlist">
-				{iconList.length ? (
+				{ iconList.length ? (
 					<ul>
-						{
-							iconList.map( ( icon, index ) => {
-								return <Icon key={ index } icon={ icon } />;
-							})
-						}
+						{ iconList.map( ( icon, index ) => {
+							return <Icon key={ index } icon={ icon } />;
+						} ) }
 					</ul>
 				) : (
 					<p>No icons found.</p>
-				)
-			}
+				) }
 			</div>
 		</>
 	);

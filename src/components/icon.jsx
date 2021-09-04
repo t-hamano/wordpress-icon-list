@@ -13,22 +13,22 @@ export default function IconInfo( props ) {
 				arrow
 				open={ openTip }
 				disableHoverListener
-				placement='top'
+				placement="top"
 				title={ 'Copied!!' }
 			>
 				<CopyToClipboard
-					text={ icon[0] }
-					onCopy={() => {
+					text={ icon[ 0 ] }
+					onCopy={ () => {
 						setOpenTip( true );
-					}}
-					>
+					} }
+				>
 					<li
-						onMouseLeave={() => {
+						onMouseLeave={ () => {
 							setOpenTip( false );
-						}}
-						>
-						<Icon icon={ icon[1] } />
-						<span>{ icon[0] }</span>
+						} }
+					>
+						<Icon icon={ icon[ 1 ] } />
+						<span>{ icon[ 0 ] }</span>
 					</li>
 				</CopyToClipboard>
 			</Tooltip>

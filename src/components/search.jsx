@@ -10,12 +10,12 @@ export default function IconInfo( props ) {
 	return (
 		<div className="search">
 			<TextField
-				onChange={( event ) => setSearchWord( event.target.value )}
+				onChange={ ( event ) => setSearchWord( event.target.value ) }
 				placeholder="Search Icon"
 				fullWidth
 				value={ searchWord }
 				type="text"
-				InputProps={{
+				InputProps={ {
 					startAdornment: (
 						<InputAdornment position="start">
 							<SearchIcon />
@@ -24,12 +24,12 @@ export default function IconInfo( props ) {
 					endAdornment: searchWord && (
 						<IconButton
 							aria-label="Delete Search Text"
-							onClick={() => setSearchWord( '' )}
+							onClick={ () => setSearchWord( '' ) }
 						>
-							<CancelRoundedIcon/>
+							<CancelRoundedIcon />
 						</IconButton>
-					)
-				}}
+					),
+				} }
 			/>
 		</div>
 	);
