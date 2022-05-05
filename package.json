@@ -17,7 +17,7 @@
 		"@material-ui/core": "^4.12.3",
 		"@material-ui/icons": "^4.11.2",
 		"@wordpress/eslint-plugin": "^9.1.1",
-		"@wordpress/icons": "^8.3.0",
+		"@wordpress/icons": "^8.4.0",
 		"@wordpress/stylelint-config": "^19.1.0",
 		"eslint": "^7.32.0",
 		"react-copy-to-clipboard": "^5.0.3",
