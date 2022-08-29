@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import IconList from './components/icon-list.jsx';
 import * as exports from '@wordpress/icons';
@@ -18,12 +18,12 @@ for ( const i in iconListComponent ) {
 	iconList.push( iconListComponent[ i ] );
 }
 
-ReactDOM.render(
-	<React.StrictMode>
-		{ undefined !== version && (
-			<small>( Latest Version: { version } )</small>
-		) }
+const container = document.getElementById( 'root' );
+const root = createRoot( container );
+
+root.render(
+	<>
+		{ undefined !== version && <small>( Latest Version: { version } )</small> }
 		<IconList defaultIconList={ iconList } />
-	</React.StrictMode>,
-	document.getElementById( 'root' )
+	</>
 );

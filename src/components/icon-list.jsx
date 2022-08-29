@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import Icon from './icon.jsx';
+import IconInfo from './icon-info.jsx';
 import Search from './search.jsx';
 
-export default function IconList( props ) {
-	const { defaultIconList } = props;
+export default function IconList( { defaultIconList } ) {
 	const [ searchWord, setSearchWord ] = useState( '' );
 	const [ iconList, setIconList ] = useState( defaultIconList );
 
@@ -12,7 +11,6 @@ export default function IconList( props ) {
 		const filteredIconList = defaultIconList.filter( ( icon ) => {
 			return icon[ 0 ].toLowerCase().match( regEx );
 		} );
-
 		setIconList( filteredIconList );
 	}, [ searchWord ] );
 
@@ -22,9 +20,11 @@ export default function IconList( props ) {
 			<div className="iconlist">
 				{ iconList.length ? (
 					<ul>
-						{ iconList.map( ( icon, index ) => {
-							return <Icon key={ index } icon={ icon } />;
-						} ) }
+						{ iconList.map( ( icon, index ) => (
+							<li key={ index }>
+								<IconInfo icon={ icon } />
+							</li>
+						) ) }
 					</ul>
 				) : (
 					<p>No icons found.</p>

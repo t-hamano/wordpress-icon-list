@@ -4,9 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import CancelRoundedIcon from '@material-ui/icons/CancelRounded';
 
-export default function IconInfo( props ) {
-	const { searchWord, setSearchWord } = props;
-
+export default function Search( { searchWord, setSearchWord } ) {
 	return (
 		<div className="search">
 			<TextField
@@ -22,10 +20,7 @@ export default function IconInfo( props ) {
 						</InputAdornment>
 					),
 					endAdornment: searchWord && (
-						<IconButton
-							aria-label="Delete Search Text"
-							onClick={ () => setSearchWord( '' ) }
-						>
+						<IconButton aria-label="Delete Search Text" onClick={ () => setSearchWord( '' ) }>
 							<CancelRoundedIcon />
 						</IconButton>
 					),
