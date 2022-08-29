@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import IconInfo from './icon-info.jsx';
 import Search from './search.jsx';
 
-export default function IconList( props ) {
-	const { defaultIconList } = props;
+export default function IconList( { defaultIconList } ) {
 	const [ searchWord, setSearchWord ] = useState( '' );
 	const [ iconList, setIconList ] = useState( defaultIconList );
 
@@ -12,7 +11,6 @@ export default function IconList( props ) {
 		const filteredIconList = defaultIconList.filter( ( icon ) => {
 			return icon[ 0 ].toLowerCase().match( regEx );
 		} );
-
 		setIconList( filteredIconList );
 	}, [ searchWord ] );
 
