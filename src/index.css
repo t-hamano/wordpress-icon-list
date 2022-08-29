@@ -31,8 +31,11 @@ a {
 	color: #21759b;
 }
 
-a:hover {
-	text-decoration: none;
+@media (hover: hover) {
+
+	a:hover {
+		text-decoration: none;
+	}
 }
 
 code {
@@ -146,25 +149,20 @@ body {
 	fill: #444;
 }
 
-.iconlist li:hover {
-	background: #fbe4e0;
-}
-
 .iconlist p {
 	padding: 5em 0;
 	font-size: 20px;
 	text-align: center;
 }
 
+@media (hover: hover) {
+
+	.iconlist button:hover {
+		background: #fbe4e0;
+	}
+}
+
 @media screen and (max-width: 768px) {
-
-	h1 {
-		font-size: 20px;
-	}
-
-	h2 {
-		font-size: 18px;
-	}
 
 	.iconlist ul {
 		font-size: 10px;
