@@ -119,10 +119,19 @@ body {
 .iconlist li {
 	position: relative;
 	width: 160px;
-	padding: 10px 0;
 	margin-bottom: 20px;
-	cursor: pointer;
 	border-radius: 3px;
+}
+
+.iconlist button {
+	display: block;
+	width: 100%;
+	padding: 0;
+	padding: 10px 0;
+	color: inherit;
+	cursor: pointer;
+	background: none;
+	border: none;
 }
 
 .iconlist svg {

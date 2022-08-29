@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Icon from './icon.jsx';
+import IconInfo from './icon-info.jsx';
 import Search from './search.jsx';
 
 export default function IconList( props ) {
@@ -22,9 +22,11 @@ export default function IconList( props ) {
 			<div className="iconlist">
 				{ iconList.length ? (
 					<ul>
-						{ iconList.map( ( icon, index ) => {
-							return <Icon key={ index } icon={ icon } />;
-						} ) }
+						{ iconList.map( ( icon, index ) => (
+							<li key={ index }>
+								<IconInfo icon={ icon } />
+							</li>
+						) ) }
 					</ul>
 				) : (
 					<p>No icons found.</p>
