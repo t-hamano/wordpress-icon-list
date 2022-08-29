@@ -9,13 +9,7 @@ export default function IconInfo( props ) {
 
 	return (
 		<>
-			<Tooltip
-				arrow
-				open={ openTip }
-				disableHoverListener
-				placement="top"
-				title={ 'Copied!!' }
-			>
+			<Tooltip arrow open={ openTip } disableHoverListener placement="top" title={ 'Copied!!' }>
 				<CopyToClipboard
 					text={ icon[ 0 ] }
 					onCopy={ () => {

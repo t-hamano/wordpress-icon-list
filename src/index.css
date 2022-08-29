@@ -10,10 +10,10 @@
 }
 
 h1 {
-	margin: 0 0 2em;
 	padding: 18px 0;
-	color: #fff;
+	margin: 0 0 2em;
 	font-size: 40px;
+	color: #fff;
 	text-align: center;
 	background: #0073aa;
 }
@@ -37,16 +37,16 @@ a:hover {
 
 code {
 	padding: 0.4em 0.65em;
-	font-size: 0.8em;
 	font-family: Monaco, Consolas, "Courier New", monospace;
+	font-size: 0.8em;
 	background: #f1f1f1;
 	border-radius: 3px;
 }
 
 code.block {
 	display: block;
-	margin: 0 0 1em;
 	padding: 1em;
+	margin: 0 0 1em;
 }
 
 hr {
@@ -57,12 +57,12 @@ hr {
 }
 
 body {
-	margin: 0;
 	padding: 0;
-	color: #444;
-	font-size: 16px;
+	margin: 0;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
 	line-height: 1.5;
+	color: #444;
 	word-break: break-word;
 }
 
@@ -80,8 +80,8 @@ body {
 /* Layout */
 .container {
 	max-width: 1140px;
-	margin: 0 auto;
 	padding: 0 10px 100px;
+	margin: 0 auto;
 }
 
 .github {
@@ -110,8 +110,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
-	color: #999;
 	font-size: 12px;
+	color: #999;
 	text-align: center;
 	list-style: none;
 }
@@ -119,10 +119,10 @@ body {
 .iconlist li {
 	position: relative;
 	width: 160px;
-	margin-bottom: 20px;
 	padding: 10px 0;
-	border-radius: 3px;
+	margin-bottom: 20px;
 	cursor: pointer;
+	border-radius: 3px;
 }
 
 .iconlist svg {

@@ -22,10 +22,7 @@ export default function IconInfo( props ) {
 						</InputAdornment>
 					),
 					endAdornment: searchWord && (
-						<IconButton
-							aria-label="Delete Search Text"
-							onClick={ () => setSearchWord( '' ) }
-						>
+						<IconButton aria-label="Delete Search Text" onClick={ () => setSearchWord( '' ) }>
 							<CancelRoundedIcon />
 						</IconButton>
 					),

@@ -20,9 +20,7 @@ for ( const i in iconListComponent ) {
 
 ReactDOM.render(
 	<React.StrictMode>
-		{ undefined !== version && (
-			<small>( Latest Version: { version } )</small>
-		) }
+		{ undefined !== version && <small>( Latest Version: { version } )</small> }
 		<IconList defaultIconList={ iconList } />
 	</React.StrictMode>,
 	document.getElementById( 'root' )
