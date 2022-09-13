@@ -17,7 +17,7 @@
 		"@material-ui/core": "^4.12.4",
 		"@material-ui/icons": "^4.11.3",
 		"@wordpress/eslint-plugin": "^13.0.0",
-		"@wordpress/icons": "^9.7.0",
+		"@wordpress/icons": "^9.8.0",
 		"@wordpress/stylelint-config": "^21.0.0",
 		"eslint": "^8.23.0",
 		"postcss": "^8.4.16",
