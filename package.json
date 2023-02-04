@@ -8,24 +8,24 @@
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
-		"gh-pages": "^4.0.0",
+		"gh-pages": "^5.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
-		"web-vitals": "^3.1.0"
+		"web-vitals": "^3.1.1"
 	},
 	"devDependencies": {
 		"@material-ui/core": "^4.12.4",
 		"@material-ui/icons": "^4.11.3",
-		"@wordpress/eslint-plugin": "^13.6.0",
-		"@wordpress/icons": "^9.13.0",
-		"@wordpress/stylelint-config": "^21.5.0",
-		"eslint": "^8.28.0",
-		"postcss": "^8.4.19",
+		"@wordpress/eslint-plugin": "^13.10.0",
+		"@wordpress/icons": "^9.17.0",
+		"@wordpress/stylelint-config": "^21.9.0",
+		"eslint": "^8.33.0",
+		"postcss": "^8.4.21",
 		"prettier": "npm:wp-prettier@^2.6.2",
 		"react-copy-to-clipboard": "^5.1.0",
-		"stylelint": "^14.15.0",
-		"stylelint-config-recess-order": "^3.0.0"
+		"stylelint": "^14.16.1",
+		"stylelint-config-recess-order": "^3.1.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
