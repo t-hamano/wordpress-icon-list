@@ -1,8 +1,6 @@
-import TextField from '@material-ui/core/TextField';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
-import CancelRoundedIcon from '@material-ui/icons/CancelRounded';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
+import IconButton from '@mui/material/IconButton';
 
 export default function Search( { searchWord, setSearchWord } ) {
 	return (
@@ -15,13 +13,11 @@ export default function Search( { searchWord, setSearchWord } ) {
 				type="text"
 				InputProps={ {
 					startAdornment: (
-						<InputAdornment position="start">
-							<SearchIcon />
-						</InputAdornment>
+						<InputAdornment position="start">{ /* <SearchIcon /> */ }</InputAdornment>
 					),
 					endAdornment: searchWord && (
 						<IconButton aria-label="Delete Search Text" onClick={ () => setSearchWord( '' ) }>
-							<CancelRoundedIcon />
+							{ /* <CancelRoundedIcon /> */ }
 						</IconButton>
 					),
 				} }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import Tooltip from '@material-ui/core/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import { Icon } from '@wordpress/icons';
 
 export default function IconInfo( { icon } ) {
