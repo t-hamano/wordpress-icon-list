@@ -2,6 +2,7 @@ module.exports = {
 	extends: [ 'plugin:@wordpress/eslint-plugin/recommended' ],
 	parser: '@babel/eslint-parser',
 	rules: {
+		'react-hooks/exhaustive-deps': 'off',
 		'prettier/prettier': [
 			'error',
 			{
