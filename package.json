@@ -12,21 +12,21 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
-		"web-vitals": "^3.3.1"
+		"web-vitals": "^3.4.0"
 	},
 	"devDependencies": {
-		"@emotion/react": "^11.10.6",
-		"@emotion/styled": "^11.10.6",
-		"@mui/material": "^5.12.0",
-		"@wordpress/eslint-plugin": "^14.4.0",
-		"@wordpress/icons": "^9.22.0",
-		"@wordpress/stylelint-config": "^21.14.0",
-		"eslint": "^8.38.0",
-		"postcss": "^8.4.21",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.14.0",
+		"@wordpress/eslint-plugin": "^14.10.0",
+		"@wordpress/icons": "^9.28.0",
+		"@wordpress/stylelint-config": "^21.20.0",
+		"eslint": "^8.44.0",
+		"postcss": "^8.4.26",
 		"prettier": "npm:wp-prettier@^2.8.5",
 		"react-copy-to-clipboard": "^5.1.0",
-		"stylelint": "^15.4.0",
-		"stylelint-config-recess-order": "^4.0.0"
+		"stylelint": "^15.10.1",
+		"stylelint-config-recess-order": "^4.3.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
