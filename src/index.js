@@ -23,7 +23,39 @@ const root = createRoot( container );
 
 root.render(
 	<>
-		{ undefined !== version && <small>( Latest Version: { version } )</small> }
+		<h2>About</h2>
+		<p>
+			This is an application to list the icons available in the{ ' ' }
+			<code>
+				<a href="https://www.npmjs.com/package/@wordpress/icons" target="_blank" rel="noreferrer">
+					@wordpress/icons
+				</a>
+			</code>{ ' ' }
+			npm package. To copy icon name to the clipboard, just click on the icon.
+		</p>
+		<ul>
+			{ undefined !== version && <li>Package version: { version }</li> }
+			<li>Total number of icons: { iconList.length }</li>
+		</ul>
+		<h2>Usage</h2>
+		<h3>Install the module</h3>
+		<p>
+			<code>npm install @wordpress/icons --save</code>
+		</p>
+		<h3>Use icon</h3>
+		<pre>
+			<code>
+				{ "import { ( Icon, check ) } from '@wordpress/icons'" }
+				<br />
+				{ '<Icon icon={ check } />' }
+			</code>
+		</pre>
+		<p className="github">
+			<a href="https://github.com/t-hamano/wordpress-icon-list" target="_blank" rel="noreferrer">
+				View on GitHub
+			</a>
+		</p>
+		<hr />
 		<IconList defaultIconList={ iconList } />
 	</>
 );

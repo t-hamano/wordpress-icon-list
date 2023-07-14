@@ -5,15 +5,16 @@ This is an application to list the icons available in the [@wordpress/icons](htt
 ## Demo
 https://t-hamano.github.io/wordpress-icon-list/
 
-## Usage in Gutenberg development
+## Usage
 
-Install the module:
+### Install the module
 
 ```
 npm install @wordpress/icons --save
 ```
 
-Use icon:
+### Use icon
+
 ```javascript
 import { Icon, check } from '@wordpress/icons';
 <Icon icon={ check } />

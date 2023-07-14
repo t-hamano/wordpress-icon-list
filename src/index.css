@@ -1,4 +1,4 @@
-/* Common */
+/* Element */
 * {
 	box-sizing: border-box;
 	text-size-adjust: 100%;
@@ -19,12 +19,11 @@ h1 {
 }
 
 h2 {
-	margin: 1em 0 0.5em;
 	font-size: 30px;
 }
 
-p {
-	margin: 0 0 1em;
+h3 {
+	font-size: 22px;
 }
 
 a {
@@ -39,23 +38,26 @@ a {
 }
 
 code {
-	padding: 0.4em 0.65em;
 	font-family: Monaco, Consolas, "Courier New", monospace;
 	font-size: 0.8em;
 	background: #f1f1f1;
 	border-radius: 3px;
 }
 
-code.block {
+p code {
+	padding: 0.4em 0.65em;
+}
+
+pre code {
 	display: block;
 	padding: 1em;
-	margin: 0 0 1em;
+	overflow-x: auto;
 }
 
 hr {
 	height: 1px;
 	margin: 60px 0;
-	background-color: #999;
+	background-color: rgba(0, 0, 0, 0.23);
 	border: none;
 }
 
@@ -72,10 +74,14 @@ body {
 @media screen and (max-width: 768px) {
 
 	h1 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
 		font-size: 18px;
 	}
 }
@@ -91,7 +97,7 @@ body {
 	text-align: right;
 }
 
-/* Component(Search) */
+/* Component (Search) */
 .search {
 	max-width: 400px;
 	margin: 80px auto;
@@ -108,7 +114,7 @@ body {
 	}
 }
 
-/* Component(IconList) */
+/* Component (IconList) */
 .iconlist ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -173,7 +179,7 @@ body {
 	}
 }
 
-/* Component(Tooltip) */
+/* Component (Tooltip) */
 .MuiTooltip-popper .MuiTooltip-tooltip {
 	font-size: 12px;
 }
