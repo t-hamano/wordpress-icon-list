@@ -19,14 +19,14 @@
 		"@emotion/styled": "^11.11.0",
 		"@mui/material": "^5.14.0",
 		"@wordpress/eslint-plugin": "^14.10.0",
-		"@wordpress/icons": "^9.28.0",
+		"@wordpress/icons": "^9.32.0",
 		"@wordpress/stylelint-config": "^21.20.0",
 		"eslint": "^8.44.0",
 		"postcss": "^8.4.26",
 		"prettier": "npm:wp-prettier@^2.8.5",
 		"react-copy-to-clipboard": "^5.1.0",
-		"stylelint": "^15.10.1",
-		"stylelint-config-recess-order": "^4.3.0"
+		"stylelint": "^14.16.1",
+		"stylelint-config-recess-order": "^3.1.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
