@@ -15,6 +15,8 @@ for ( const i in iconListComponent ) {
 	if ( 'Icon' === iconListComponent[ i ][ 0 ] ) {
 		continue;
 	}
+	console.log( iconListComponent[ i ] ); // eslint-disable-line no-console
+
 	iconList.push( iconListComponent[ i ] );
 }
 

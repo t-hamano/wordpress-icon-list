@@ -19,7 +19,7 @@
 		"@emotion/styled": "^11.11.0",
 		"@mui/material": "^5.14.9",
 		"@wordpress/eslint-plugin": "^15.1.0",
-		"@wordpress/icons": "^9.38.0",
+		"@wordpress/icons": "^10.0.0",
 		"@wordpress/stylelint-config": "^21.24.0",
 		"eslint": "^8.49.0",
 		"postcss": "^8.4.29",
