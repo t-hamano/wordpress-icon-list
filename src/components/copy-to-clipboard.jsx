@@ -1,11 +1,11 @@
-import React from 'react';
+import { Children, cloneElement } from 'react';
 import copy from 'copy-to-clipboard';
 
 // This is the functional component version of the react-copy-to-clipboard library.
 // See: https://github.com/nkbt/react-copy-to-clipboard
 export function CopyToClipboard( { text, children, onCopy, options, ...props } ) {
 	const onClick = ( event ) => {
-		const elem = React.Children.only( children );
+		const elem = Children.only( children );
 		const result = copy( text, options );
 
 		if ( onCopy ) {
@@ -18,6 +18,6 @@ export function CopyToClipboard( { text, children, onCopy, options, ...props } )
 		}
 	};
 
-	const elem = React.Children.only( children );
-	return React.cloneElement( elem, { ...props, onClick } );
+	const elem = Children.only( children );
+	return cloneElement( elem, { ...props, onClick } );
 }

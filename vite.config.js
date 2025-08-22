@@ -7,7 +7,11 @@ import { resolve } from 'path';
 const packageJson = JSON.parse( readFileSync( resolve( __dirname, 'package.json' ), 'utf-8' ) );
 
 export default defineConfig( {
-	plugins: [ react() ],
+	plugins: [
+		react({
+			jsxRuntime: 'automatic'
+		})
+	],
 	base: './',
 	build: {
 		outDir: 'build',
@@ -17,7 +21,7 @@ export default defineConfig( {
 		open: true,
 	},
 	define: {
-		__WORDPRESS_ICONS_VERSION__: JSON.stringify(
+		'import.meta.env.VITE_WORDPRESS_ICONS_VERSION': JSON.stringify(
 			packageJson.devDependencies[ '@wordpress/icons' ]?.replace( '^', '' ) || 'unknown'
 		),
 	},
