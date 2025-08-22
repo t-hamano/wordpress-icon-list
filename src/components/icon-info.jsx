@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Tooltip from '@mui/material/Tooltip';
 import { Icon } from '@wordpress/icons';
+import { CopyToClipboard } from './copy-to-clipboard.jsx';
 
 export default function IconInfo( { icon } ) {
 	const [ openTip, setOpenTip ] = useState( false );
