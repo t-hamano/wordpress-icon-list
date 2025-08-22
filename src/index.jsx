@@ -4,8 +4,7 @@ import './index.css';
 import IconList from './components/icon-list.jsx';
 import * as exports from '@wordpress/icons';
 
-const p = require( '../package.json' );
-const version = p?.devDependencies?.[ '@wordpress/icons' ].replace( '^', '' );
+const version = import.meta.env.VITE_WORDPRESS_ICONS_VERSION;
 
 const iconListComponent = Object.entries( exports );
 
