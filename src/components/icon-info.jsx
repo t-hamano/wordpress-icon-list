@@ -16,7 +16,7 @@ export default function IconInfo( { icon } ) {
 		>
 			<Tooltip arrow open={ openTip } disableHoverListener placement="top" title={ 'Copied!!' }>
 				<button type="button" onMouseLeave={ () => setOpenTip( false ) }>
-					<Icon icon={ icon[ 1 ] } viewBox="0 0 24 24" />
+					<Icon icon={ icon[ 1 ] } />
 					<span>{ icon[ 0 ] }</span>
 				</button>
 			</Tooltip>
