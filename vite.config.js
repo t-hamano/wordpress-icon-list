@@ -8,10 +8,14 @@ const packageJson = JSON.parse( readFileSync( resolve( __dirname, 'package.json'
 
 export default defineConfig( {
 	plugins: [
-		react({
-			jsxRuntime: 'automatic'
-		})
+		react()
 	],
+	resolve: {
+		alias: {
+			'react': resolve(__dirname, 'node_modules/react'),
+			'react-dom': resolve(__dirname, 'node_modules/react-dom')
+		}
+	},
 	base: './',
 	build: {
 		outDir: 'build',
