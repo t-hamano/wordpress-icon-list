@@ -5,26 +5,26 @@
 	"license": "GPL-2.0+",
 	"homepage": "./",
 	"dependencies": {
-		"@testing-library/jest-dom": "^6.8.0",
+		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.0",
 		"@testing-library/user-event": "^14.6.1",
 		"copy-to-clipboard": "^3.3.3",
 		"gh-pages": "^6.3.0",
-		"react": "^19.1.1",
-		"react-dom": "^19.1.1",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
 		"web-vitals": "^5.1.0"
 	},
 	"devDependencies": {
 		"@emotion/react": "^11.14.0",
 		"@emotion/styled": "^11.14.1",
-		"@mui/material": "^7.3.1",
-		"@vitejs/plugin-react": "^4.3.4",
-		"@wordpress/eslint-plugin": "^22.15.0",
-		"@wordpress/icons": "^10.29.0",
-		"@wordpress/stylelint-config": "^23.21.0",
-		"eslint": "^9.33.0",
+		"@mui/material": "^7.3.4",
+		"@vitejs/plugin-react": "^5.0.4",
+		"@wordpress/eslint-plugin": "^22.19.0",
+		"@wordpress/icons": "^11.0.0",
+		"@wordpress/stylelint-config": "^23.25.0",
+		"eslint": "^9.38.0",
 		"prettier": "npm:wp-prettier@^3.0.3",
-		"vite": "^6.0.7"
+		"vite": "^7.1.10"
 	},
 	"scripts": {
 		"start": "vite",
